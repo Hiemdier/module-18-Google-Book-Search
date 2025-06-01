@@ -5,7 +5,7 @@ This application is used to associated users with thoughts and reactions
 
 ## Table of Contents
 - [Installation](#installation)
-- [Video](#video)
+- [Video/Live](#video)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
@@ -18,7 +18,7 @@ This application is used to associated users with thoughts and reactions
 - Download the repo. Setup a `.env` file with associated MongoDB path. 
 - `Run npm render-build`, and `npm run start`.
 
-## Live Appliaction
+## Video/Live
 Please the deployed appliacation [here](https://module18-challenge.onrender.com) (Render not operating as intended).
 
 ## Usage
