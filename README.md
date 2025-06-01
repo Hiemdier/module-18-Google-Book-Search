@@ -19,7 +19,7 @@ This application is used to associated users with thoughts and reactions
 - `Run npm render-build`, and `npm run start`.
 
 ## Live Appliaction
-Please the deployed appliacation [here](https://module18-challenge.onrender.com).
+Please the deployed appliacation [here](https://module18-challenge.onrender.com) (Render not operating as intended).
 
 ## Usage
 Search for books based on the name
