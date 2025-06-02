@@ -33,17 +33,16 @@ const startApolloServer = async () => {
       context: authenticateToken as any
     }
   ));
-  if (process.env.NODE_ENV === 'production') {
-    const distPath = path.resolve(__dirname, '../../client', 'dist');
-    console.log('Serving static files from:', distPath); // Log for debugging
-    app.use(express.static(distPath));
+  
+  const distPath = path.resolve(__dirname, '../../client', 'dist');
+  console.log('Serving static files from:', distPath); // Log for debugging
+  app.use(express.static(distPath));
 
-    app.get('*', (_req: Request, res: Response) => {
-      const indexPath = path.join(distPath, 'index.html');
-      console.log('Serving index from:', indexPath); // Log for debugging
-      res.sendFile(indexPath);
-    });
-  }
+  app.get('*', (_req: Request, res: Response) => {
+    const indexPath = path.join(distPath, 'index.html');
+    console.log('Serving index from:', indexPath); // Log for debugging
+    res.sendFile(indexPath);
+  });
 
   app.listen(PORT, () => {
     console.log(`API server running on port ${PORT}!`);
